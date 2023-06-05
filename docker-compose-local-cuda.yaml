@@ -1,0 +1,11 @@
+version: '0.1'
+
+services:
+  develop:
+    build: .
+    image: maxsloof/basedlibrarian
+    tty: true
+    volumes:
+      - ./code:/app/code
+      - ./books:/app/books
+      - ./models:/app/models
